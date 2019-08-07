@@ -1,0 +1,70 @@
+{
+  "name": "purity-optimizer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/RebeccaStevens/purity-optimizer#readme",
+  "bugs": {
+    "url": "https://github.com/RebeccaStevens/purity-optimizer/issues"
+  },
+  "repository": "git@github.com:RebeccaStevens/purity-optimizer.git",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Rebecca Stevens",
+    "email": "rebecca.stevens@outlook.co.nz"
+  },
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "scripts": {
+    "compile": "rollup -c",
+    "lint": "eslint './{src,tests}/**/*.ts' --ext .ts",
+    "report-coverage": "codecov -f coverage/lcov.info",
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.7.0",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "codecov": "^3.5.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-functional": "^1.0.0-rc.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.14.1",
+    "eslint-plugin-jsdoc": "^15.8.0",
+    "husky": "^3.0.2",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "rollup": "^1.14.5",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.22.1",
+    "rollup-plugin-unassert": "^0.3.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "greenkeeper": {
+    "label": ":green_heart:"
+  }
+}
