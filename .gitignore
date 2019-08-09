@@ -5,4 +5,6 @@ node_modules/
 *.log
 
 # Generated Files
+/.rpt2_cache
 /coverage
+/lib
