@@ -383,9 +383,9 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@rebeccastevens/eslint-config@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@rebeccastevens/eslint-config/-/eslint-config-0.1.1.tgz#3a84986b92fb023a6f937bd9f2dbc581f86d2f6d"
+"@rebeccastevens/eslint-config@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@rebeccastevens/eslint-config/-/eslint-config-0.1.2.tgz#b639d0fffbbbc9b231677eaec65a185befb6f449"
 
 "@types/babel__core@^7.1.0":
   version "7.1.2"
