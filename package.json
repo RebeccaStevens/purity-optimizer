@@ -16,7 +16,7 @@
   "scripts": {
     "prebuild": "rimraf lib",
     "build": "rollup -c rollup.config.ts",
-    "lint": "eslint './{src,tests}/**/*.ts' --ext .ts",
+    "lint": "eslint './**/*.ts' --ext .ts",
     "report-coverage": "codecov -f coverage/lcov.info",
     "test": "jest"
   },
