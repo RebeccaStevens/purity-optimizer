@@ -3,9 +3,6 @@
  * https://jestjs.io/docs/en/configuration.html
  */
 
-/* eslint-disable functional/immutable-data, functional/no-expression-statement,
-eslint-comments/disable-enable-pair, multiline-comment-style, comma-dangle */
-
 export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,

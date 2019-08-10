@@ -9,6 +9,16 @@
   },
   "extends": ["@rebeccastevens/eslint-config"],
   "overrides": [
+    // Config Files.
+    {
+      "files": ["*.ts"],
+      "rules": {
+        "functional/functional-parameters": "off",
+        "functional/no-conditional-statement": "off",
+        "functional/no-expression-statement": "off",
+        "comma-dangle": "off"
+      }
+    },
     // Testing Rules.
     {
       "files": ["**/*.test.ts"],
