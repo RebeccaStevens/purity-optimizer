@@ -3,13 +3,14 @@
  */
 
 import { basename } from 'path';
+import { RollupOptions } from 'rollup';
 import rollupPluginCommonjs from 'rollup-plugin-commonjs';
 import rollupPluginNodeResolve from 'rollup-plugin-node-resolve';
 import rollupPluginTypescript from 'rollup-plugin-typescript2';
 
 import pkg from './package.json';
 
-const common = {
+const common: Partial<RollupOptions> = {
   input: 'src/index.ts',
 
   external: (id) =>
@@ -22,7 +23,7 @@ const common = {
   }
 };
 
-const cjs = {
+const cjs: RollupOptions = {
   ...common,
 
   output: {
@@ -42,7 +43,7 @@ const cjs = {
   ]
 };
 
-const esm = {
+const esm: RollupOptions = {
   ...common,
 
   output: {
