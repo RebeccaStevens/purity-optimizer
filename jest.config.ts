@@ -6,32 +6,31 @@
  */
 
 import { Config as JestConfig } from '@jest/types';
+import { pathsToModuleNameMapper } from 'ts-jest/utils';
+
+import { compilerOptions } from './tsconfig.json';
 
 const config: Partial<JestConfig.DefaultOptions> = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.ts'],
   coverageDirectory: 'coverage',
-  coverageReporters: [
-    'text',
-    'lcov'
-  ],
+  coverageReporters: ['text', 'lcov'],
   globals: {
     'ts-jest': {
       tsConfig: 'tsconfig.tests.json'
     }
   },
-  moduleFileExtensions: [
-    'js',
-    'json',
-    'jsx',
-    'ts',
-    'tsx',
-    'node'
-  ],
+  moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
+  moduleNameMapper: pathsToModuleNameMapper(
+    compilerOptions.paths,
+    {
+      prefix: `${process.cwd()}/`
+    }
+  ),
   testEnvironment: 'node',
   transform: {
     '^.+\\.ts$': 'ts-jest'
   }
 };
 
-export default config;
+module.exports = config;

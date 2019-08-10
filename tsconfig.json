@@ -18,9 +18,12 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@lib": ["src/index"],
+      "@optimizer": ["src/optimizer/index"],
+      "@options": ["src/options/index"]
+    },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
-  },
-  "include": ["src/**/*.ts"]
+  }
 }
