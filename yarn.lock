@@ -401,11 +401,11 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@rebeccastevens/eslint-config@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@rebeccastevens/eslint-config/-/eslint-config-0.1.5.tgz#6279d10529fd51d10d5c6a33b8e2c837b1d40c28"
+"@rebeccastevens/eslint-config@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@rebeccastevens/eslint-config/-/eslint-config-0.2.0.tgz#34e59db2f02bc6e9c118a83c86f15892a2b8803a"
   dependencies:
-    rimraf "^2.6.3"
+    deepmerge "^4.0.0"
 
 "@types/babel__core@^7.1.0":
   version "7.1.2"
@@ -1326,6 +1326,10 @@ deepmerge@^2.0.1:
 deepmerge@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
+
+deepmerge@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.0.0.tgz#3e3110ca29205f120d7cb064960a39c3d2087c09"
 
 define-properties@^1.1.2, define-properties@^1.1.3:
   version "1.1.3"
