@@ -408,8 +408,8 @@
     rimraf "^2.5.2"
 
 "@rebeccastevens/eslint-config@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@rebeccastevens/eslint-config/-/eslint-config-0.2.0.tgz#34e59db2f02bc6e9c118a83c86f15892a2b8803a"
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@rebeccastevens/eslint-config/-/eslint-config-0.2.2.tgz#4086697c05fc92fac26c6481f2c9ef451b9a252f"
   dependencies:
     deepmerge "^4.0.0"
 
