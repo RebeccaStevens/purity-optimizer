@@ -407,9 +407,9 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@rebeccastevens/eslint-config@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@rebeccastevens/eslint-config/-/eslint-config-0.2.0.tgz#34e59db2f02bc6e9c118a83c86f15892a2b8803a"
+"@rebeccastevens/eslint-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rebeccastevens/eslint-config/-/eslint-config-1.0.0.tgz#13d0a97b910b289a1f8847dc168b58112b493bf8"
   dependencies:
     deepmerge "^4.0.0"
 
